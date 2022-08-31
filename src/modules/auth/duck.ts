@@ -10,6 +10,7 @@ async (undefined, thunkApi) => {
 }
 );
 
+//Add listeners if you need to 
 listenerMiddleware.startListening({
   matcher: isAnyOf(fetchUser.rejected),
   effect: async (action, listenerAPI) => {
